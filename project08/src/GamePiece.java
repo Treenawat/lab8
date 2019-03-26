@@ -1,4 +1,6 @@
-public class GamePiece{
+public enum GamePiece{
+	RED(...), GREEN(...), BLUE(...), YELLOW(...), CYAN(...), MAGENTA(...);
+	
 	private GamePieceAppearance appearance;
 	private int priority;
 	

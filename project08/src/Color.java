@@ -1,4 +1,6 @@
-public class Color{
+public enum Color{
+	RED(...), GREEN(...), BLUE(...), YELLOW(...), CYAN(...), MAGENTA(...);
+	
 	private int r;
 	private int g;
 	private int b;

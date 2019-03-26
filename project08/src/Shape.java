@@ -1,5 +1,7 @@
-public class Shape{
-	public String toString(){
+public enum Shape{
+	THIMBLE, BOOT, RACECAR;
 	
+	public String toString(){
+		return name();
 	}
 }
