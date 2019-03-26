@@ -46,13 +46,12 @@ public class BoardGame{
 	}
 	
 	public ArrayList<String> getPlayersAtLocation(Location loc){
-		ArrayList<String> getLocation = new ArrayList<String>();
-		for(int i = 0; i < playerLocations.size(); i++) {
-			if (playerLocations.containsValue(loc)) {
-				getLocation.add(playerLocations.get(i).toString());
-			}
+		ArrayList<String> getPlayersAtLocation = new ArrayList<String>();
+		for (String key : playerLocations.keySet()) {
+			if(loc.equals(playerLocations.get(key))) {
+				getPlayersAtLocation.add(playerPieces.get(key).toString());
 		}
-		return getLocation;
+		return getPlayersAtLocation;
 	}
 	
 	public ArrayList<GamePiece> getGamePiecesAtLocation(Location loc){
