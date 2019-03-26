@@ -1,3 +1,3 @@
-public class Location{
-	
+public enum Location{
+	KITCHEN, CONSERVATORY, DINING_ROOM, BALLROOM, STUDHALL, LOUNGE, LIBRARY, BILLIARD_ROOM
 }
