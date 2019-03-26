@@ -12,4 +12,5 @@ public class GamePieceAppearance{
 	public int getShape() {
 		int shape = ;
 		return shape;
+	}
 }
