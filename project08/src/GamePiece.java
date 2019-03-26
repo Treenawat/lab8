@@ -1,5 +1,5 @@
 public enum GamePiece{
-	RED(...), GREEN(...), BLUE(...), YELLOW(...), CYAN(...), MAGENTA(...);
+	RED, GREEN, BLUE, YELLOW, CYAN, MAGENTA;
 	
 	private GamePieceAppearance appearance;
 	private int priority;

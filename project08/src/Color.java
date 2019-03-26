@@ -1,23 +1,22 @@
 public enum Color{
-	RED(...), GREEN(...), BLUE(...), YELLOW(...), CYAN(...), MAGENTA(...);
+	RED, GREEN, BLUE, YELLOW, CYAN, MAGENTA;
 	
 	private int r;
 	private int g;
 	private int b;
 	
-	private color(int r, int g, int b){
-	
+	private void color(int r, int g, int b){
+		this.r = r;
+		this.g = g;
+		this.b = b;
 	}
 	public int getR() {
-		int r = ;
 		return r;
 	}
 	public int getG() {
-		int g = ;
 		return r;
 	}
 	public int getB() {
-		int b = ;
 		return r;
 	}
 }
