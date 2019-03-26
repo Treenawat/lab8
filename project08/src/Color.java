@@ -18,9 +18,9 @@ public enum Color{
 		return r;
 	}
 	public int getG() {
-		return r;
+		return g;
 	}
 	public int getB() {
-		return r;
+		return b;
 	}
 }
