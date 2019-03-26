@@ -49,20 +49,20 @@ public class BoardGame{
 		ArrayList<String> getPlayersAtLocation = new ArrayList<String>();
 		for (String key : playerLocations.keySet()) {
 			if(loc.equals(playerLocations.get(key))) {
-				getPlayersAtLocation.add(playerPieces.get(key).toString());
+				getPlayersAtLocation.add(key);
+			}
 		}
 		return getPlayersAtLocation;
+		
 	}
 	
 	public ArrayList<GamePiece> getGamePiecesAtLocation(Location loc){
-		ArrayList<GamePiece> getPiece = new ArrayList<GamePiece>();
-		for(int i = 0; i < playerLocations.size(); i++) {
-			if (playerLocations.containsValue(loc)) {
-				String a = playerLocations.toString();
-				getPiece.add(a);
-			}
+		ArrayList<GamePiece> getPiecesAtLocation = new ArrayList<GamePiece>();
+		for (String key : playerLocations.keySet()) {
+			if(loc.equals(playerLocations.get(key))) {
+				getPiecesAtLocation.add(playerPieces.get(key));
 		}
-		return getPiece;
+		return getPiecesAtLocation;
 	}
 	public Set<String> getPlayers(){
 		Set<String> players = new HashSet<String>();
