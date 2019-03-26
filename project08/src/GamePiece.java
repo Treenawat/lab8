@@ -19,7 +19,7 @@ public enum GamePiece{
 	public int getShape() {
 		return getShape();
 	}
-	public GamePiece movesFirst(GamePiece a, GamePiece b) {
+	public static GamePiece movesFirst(GamePiece a, GamePiece b) {
 		if (a.priority < b.priority) {
 			return a;
 		}

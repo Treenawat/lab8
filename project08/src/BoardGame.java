@@ -37,7 +37,11 @@ public class BoardGame{
 	}
 	
 	public String moveTwoPlayers(Location[] newLocations, String[] playerNames) {
+		GamePiece a = getPlayerGamePiece(playerNames[0]);
+		GamePiece b = getPlayerGamePiece(playerNames[1]);
+		GamePiece priority = GamePiece.movesFirst(a, b);
 		
+			
 	}
 	
 	
@@ -62,6 +66,7 @@ public class BoardGame{
 			if(loc.equals(playerLocations.get(key))) {
 				getPiecesAtLocation.add(playerPieces.get(key));
 		}
+		}
 		return getPiecesAtLocation;
 	}
 	public Set<String> getPlayers(){
@@ -82,6 +87,5 @@ public class BoardGame{
 			gamePiece.add(playerPieces.get(key));
 		}
 		return gamePiece;
-	}
 	}
 }
