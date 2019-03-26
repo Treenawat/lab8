@@ -14,17 +14,23 @@ public enum GamePiece{
 	}
 	
 	public int getColor() {
-		int color = ;
-		return color;
+		return getColor();
 	}
 	public int getShape() {
-		int shape = ;
-		return shape;
+		return getShape();
 	}
 	public GamePiece movesFirst(GamePiece a, GamePiece b) {
-		
+		if (a.priority < b.priority) {
+			return a;
+		}
+		else if (a.priority > b.priority) {
+			return b;
+		}
+		else {
+			return a;
+		}
 	}
 	public String toString() {
-		
+		return String.format("%s: a %s %s with priority %d", name(), getColor(), getShape(), priority);
 	}
 }
