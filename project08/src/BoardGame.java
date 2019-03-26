@@ -23,5 +23,24 @@ public class BoardGame{
 	public String moveTwoPlayers(Location[] newLocations, String[] playerNames) {
 		
 	}
+	public Location getPlayersLocation(String player) {
+		Location location = ;
+		return location;
+	}
+	public ArrayList<String> getPlayersAtLocation(Location loc){
+	 ;
+	}
 	
+	public ArrayList<GamePiece> getGamePiecesAtLocation(Location loc){
+		
+	}
+	public Set<String> getPlayers(){
+		
+	}
+	public Set<Location> getPlayerLocations(){
+		
+	}
+	public Set<GamePiece> getPlayerPieces(){
+		
+	}
 }
