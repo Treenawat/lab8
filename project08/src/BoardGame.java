@@ -1,5 +1,7 @@
 public class BoardGame{
-	private playerPieces
+	protected playerPieces <String, GamePiece>;
+	protected playerLocations <String, Location>;
+	
 	public BoardGame(){
 	
 	}
@@ -7,6 +9,18 @@ public class BoardGame{
 		
 	}
 	public GamePiece(String playerName) {
+		
+	}
+	
+	public String getPlayerWithGamePiece(GamePiece gamePiece) {
+		
+	}
+	
+	public void movePlayer(String playerName, Location newLocation) {
+		
+	}
+	
+	public String moveTwoPlayers(Location[] newLocations, String[] playerNames) {
 		
 	}
 	
