@@ -1,5 +1,11 @@
 public enum GamePiece{
-	RED, GREEN, BLUE, YELLOW, CYAN, MAGENTA;
+	RED_RACER(new GamePieceAppearance(Color.RED, Shape.RACECAR), 0),
+	MAGENTA_RACER(new GamePieceAppearance(Color.MAGENTA, Shape.RACECAR), 1),
+	BLUE_RACER(new GamePieceAppearance(Color.BLUE, Shape.RACECAR), 2),
+	BLUE_BOOT(new GamePieceAppearance(Color.BLUE, Shape.BOOT), 2),
+	YELLOW_BOOT(new GamePieceAppearance(Color.YELLOW, Shape.BOOT), 2),
+	GREEN_BOOT(new GamePieceAppearance(Color.GREEN, Shape.BOOT), 2),
+	RED_THIMBLE(new GamePieceAppearance(Color.RED, Shape.THIMBLE), 2);
 	
 	private GamePieceAppearance appearance;
 	private int priority;
@@ -9,10 +15,7 @@ public enum GamePiece{
 		this.priority = priority;
 		
 	}
-	private GamePiece() {
-		
-	}
-	
+
 	public int getColor() {
 		return getColor();
 	}

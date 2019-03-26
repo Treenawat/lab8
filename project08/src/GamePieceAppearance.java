@@ -7,9 +7,9 @@ public class GamePieceAppearance{
 		this.shape = shape;
 	}
 	public Color getColor() {
-		return color;
+		return this.color;
 	}
 	public Shape getShape() {
-		return shape;
+		return this.shape;
 	}
 }
