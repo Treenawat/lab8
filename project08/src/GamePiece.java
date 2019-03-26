@@ -5,8 +5,14 @@ public enum GamePiece{
 	private int priority;
 	
 	private GamePiece(GamePieceAppearance appearance, int priority){
-	
+		this.appearance = appearance;
+		this.priority = priority;
+		
 	}
+	private GamePiece() {
+		
+	}
+	
 	public int getColor() {
 		int color = ;
 		return color;

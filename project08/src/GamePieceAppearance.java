@@ -3,14 +3,13 @@ public class GamePieceAppearance{
 	private Shape shape;
 	
 	public GamePieceAppearance(Color color, Shape shape){
-	
+		this.color = color;
+		this.shape = shape;
 	}
-	public int getColor() {
-		int color = ;
+	public Color getColor() {
 		return color;
 	}
-	public int getShape() {
-		int shape = ;
+	public Shape getShape() {
 		return shape;
 	}
 }

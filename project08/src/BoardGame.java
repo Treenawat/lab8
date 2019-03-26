@@ -24,6 +24,7 @@ public class BoardGame{
 		
 	}
 	
+	
 	public Location getPlayersLocation(String player) {
 		Location location = ;
 		return location;
