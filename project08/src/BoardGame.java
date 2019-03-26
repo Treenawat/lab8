@@ -72,10 +72,17 @@ public class BoardGame{
 	}
 	public Set<Location> getPlayerLocations(){
 		Set<Location> location = new HashSet<Location>();
-		location.add(playerLocations.toString());
+		for (String key : playerLocations.keySet()) {
+			location.add(playerLocations.get(key));
+		}
 		return location;
 	}
 	public Set<GamePiece> getPlayerPieces(){
-		
+		Set<GamePiece> gamePiece = new HashSet<GamePiece>();
+		for (String key : playerPieces.keySet()) {
+			gamePiece.add(playerPieces.get(key));
+		}
+		return gamePiece;
+	}
 	}
 }
