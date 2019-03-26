@@ -23,10 +23,12 @@ public class BoardGame{
 	public String moveTwoPlayers(Location[] newLocations, String[] playerNames) {
 		
 	}
+	
 	public Location getPlayersLocation(String player) {
 		Location location = ;
 		return location;
 	}
+	
 	public ArrayList<String> getPlayersAtLocation(Location loc){
 	 ;
 	}
