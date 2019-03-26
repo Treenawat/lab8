@@ -5,10 +5,14 @@ public enum Color{
 	private int g;
 	private int b;
 	
-	private void color(int r, int g, int b){
+	private Color(int r, int g, int b){
 		this.r = r;
 		this.g = g;
 		this.b = b;
+	}
+	
+	private Color() {
+		
 	}
 	public int getR() {
 		return r;
