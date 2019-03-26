@@ -36,11 +36,23 @@ public class BoardGame{
 		playerLocations.replace(playerName, newLocation);
 	}
 	
-	public String moveTwoPlayers(Location[] newLocations, String[] playerNames) {
-		GamePiece a = getPlayerGamePiece(playerNames[0]);
-		GamePiece b = getPlayerGamePiece(playerNames[1]);
-		GamePiece priority = GamePiece.movesFirst(a, b);
-		
+	public String[] moveTwoPlayers(Location[] newLocations, String[] playerNames) {
+		String[] order = new String[2];
+		if(GamePiece.movesFirst(playerPieces.get(playerNames[0]), playerPieces.get(playerNames[1])).equals(playerPieces.get(playerNames[0]))) {
+			playerLocations.put(playerNames[0], newLocations[0]);
+			playerLocations.put(playerNames[1], newLocations[1]);
+			
+			order[0] = playerNames[0];
+			order[1] = playerNames[1];
+		}
+		else {
+			playerLocations.put(playerNames[1], newLocations[0]);
+			playerLocations.put(playerNames[0], newLocations[1]);
+			
+			order[0] = playerNames[1];
+			order[1] = playerNames[0];
+		}
+		return order;
 			
 	}
 	
