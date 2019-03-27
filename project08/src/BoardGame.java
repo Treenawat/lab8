@@ -7,9 +7,6 @@ public class BoardGame{
 	protected LinkedHashMap<String, GamePiece> playerPieces = new LinkedHashMap<String, GamePiece>();
 	protected LinkedHashMap<String, Location> playerLocations = new LinkedHashMap<String, Location>();
 	
-	public BoardGame(){
-	
-	}
 	public boolean addPlayer(String playerName, GamePiece gamePiece, Location intialLocation) {
 		if (playerPieces.containsValue(gamePiece)) {
 		return false;

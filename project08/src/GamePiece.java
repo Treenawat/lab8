@@ -13,14 +13,13 @@ public enum GamePiece{
 	private GamePiece(GamePieceAppearance appearance, int priority){
 		this.appearance = appearance;
 		this.priority = priority;
-		
 	}
 
-	public int getColor() {
-		return getColor();
+	public Color getColor() {
+		return appearance.getColor();
 	}
-	public int getShape() {
-		return getShape();
+	public Shape getShape() {
+		return appearance.getShape();
 	}
 	public static GamePiece movesFirst(GamePiece a, GamePiece b) {
 		if (a.priority < b.priority) {
